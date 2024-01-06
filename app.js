@@ -6,7 +6,10 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
 // Import Utilities
-// const  { database } = require("./utils") 
+const  { database } = require("./utils") 
+
+// Initialize database connection
+database.mongooseConnection();
 
 // Start Routes
 // const { userRouter,jobRouter,studentRouter  } = require("./Routes")
