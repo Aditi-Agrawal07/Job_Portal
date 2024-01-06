@@ -1,11 +1,13 @@
 
- const express = require("express")
+
  require("dotenv").config()
 
 // Import package
 const http = require("http")
 
-const app = express()
+const app = require("./app")
+
+
 
 // create server
 const httpServer = http.createServer(app)
